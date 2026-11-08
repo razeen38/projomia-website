@@ -21,7 +21,7 @@
   <main>
     <div class="wrap">
       <p class="kicker">Projomia · AI Work Context &amp; Memory</p>
-      <h1>Your work stays on your devices.</h1>
+      <h1>Your privacy in Projomia.</h1>
       <p>This policy describes Projomia for iPhone and Mac as prepared for the first public release. It matches the app’s current behavior. It is not a promise about a future cloud service.</p>
       <p>Last updated 8 November 2026.</p>
 
@@ -36,18 +36,22 @@
         <li>Your question, notes, project and room names, local text from photos, drawing extracts, and a bounded amount of saved project memory.</li>
         <li>Photographs. “Suggest information” sends a resized JPEG with GPS and other embedded metadata removed. Note investigation can send the exact stored photograph, which is the default on that screen, and an authorized inspection can do the same. An exact original can still contain location metadata if the file has it. The screen states which kind of image is being sent.</li>
       </ul>
-      <p>Those requests set <code>store: false</code>. Projomia does not keep a copy of the request on a server of its own. This does not mean OpenAI retains nothing. OpenAI’s own retention, including safety logging, still applies.</p>
+      <p>Those requests set <code>store: false</code>. Projomia does not keep a copy of the request on a server of its own. This does not mean OpenAI retains nothing. OpenAI’s own retention, including safety logging, still applies. Read <a href="https://openai.com/policies/privacy-policy/">OpenAI’s privacy policy</a> and <a href="https://platform.openai.com/docs/guides/your-data">API data controls</a> for its handling of requests.</p>
       <p>Replies are saved in your local library as unverified conversation. They do not change your project until you confirm a change.</p>
 
       <h2>ChatGPT sign-in and keys</h2>
       <p>If you sign in with ChatGPT, Projomia stores that account email in the iPhone or Mac Keychain and sends an identifier the app generates to OpenAI so the sign-in can be recognized. A later sign-in can send the email back to OpenAI as a hint. An API key, if you save one, is also kept in the Keychain and is sent only to OpenAI when you make a request.</p>
-      <p>Sign out removes the local ChatGPT session. If OpenAI does not confirm remote revocation, disconnect the app in ChatGPT settings as well. Removing the API key deletes it from the Keychain. Deleting the app removes its local library. Export or copy what you need first.</p>
+      <p>Sign out removes the local ChatGPT session. If OpenAI does not confirm remote revocation, disconnect the app in ChatGPT settings as well. Removing the API key deletes it from the Keychain. On iPhone, deleting the app removes its app-local library; offloading the app keeps its data. Copies on a paired device, exports, Photos, and device backups are separate and are not erased by deleting this app. Removing the Mac application alone may leave its library on that Mac. Export or copy what you need before deleting data.</p>
+
+      <h2>Retention, deletion, and consent</h2>
+      <p>Project records and saved conversations remain in your local library until you delete them. Use the app’s deletion and Cleanup controls to manage local records. Review copies on paired devices, exported files, and device backups separately. Signing out or removing a credential does not delete your project library.</p>
+      <p>You can stop future AI sharing by declining sends, stopping optional AI workflows, and disconnecting your OpenAI credential in Settings. Data already sent to OpenAI is subject to OpenAI’s retention and deletion procedures; Projomia cannot erase it from OpenAI by deleting a local record. For OpenAI data requests, use <a href="https://privacy.openai.com/">OpenAI’s privacy portal</a>. Projomia has no server-held project library for the publisher to retrieve or delete.</p>
 
       <h2>What Projomia does not do</h2>
       <p>Projomia does not show ads, does not track you across other companies’ apps, and does not use an advertising identifier. It does not use the microphone. It does not read your whole photo library. Saving to Photos happens only when you choose it. Import uses the photo picker. Live location is not collected. Precise location leaves the device only as metadata already inside a photograph you choose to send as an exact original.</p>
 
-      <h2>Privacy label</h2>
-      <p>The App Store label for this release should list Email Address, Photos or Videos, Precise Location, Other User Content, and User ID. Each is linked to the user through the OpenAI credential, is not used for tracking, and is used for app functionality.</p>
+      <h2>Data shared for app functionality</h2>
+      <p>Optional OpenAI use can share Email Address, Photos or Videos, Precise Location, Other User Content, and User ID, as described above. These may be linked to your OpenAI account. Projomia does not use them for tracking.</p>
 
       <h2>Contact</h2>
       <p class="note">The publisher has not yet provided a public support address. Until that address is added on the <a href="../support/">support page</a>, this policy cannot name a mailbox or postal address.</p>
