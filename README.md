@@ -2,7 +2,7 @@
 
 Local source for the public pages. This folder is a separate repository from the Projomia application.
 
-**Not published.** https://projomia.com is not being served from this folder yet. Do not treat the intended URLs as live.
+Public site for projomia.com. DNS and HTTPS must be confirmed after each publication.
 
 Intended addresses after the owner publishes:
 
