@@ -1,66 +1,106 @@
-# Projomia — App Store listing draft
+# Projomia — App Store preparation
 
-Not entered in App Store Connect. Name availability and trademark clearance are still separate checks.
+Prepared on 8 November 2026. Not entered in App Store Connect: the signed-in Apple account offers “Join the Apple Developer Program” and the Apps page exposes no app-management controls. No app record, availability, price or privacy questionnaire was saved.
 
-## Identity
+## Identity and metadata
 
-| Field | Value | Limit | Count |
+| Field | Prepared value |
+|---|---|
+| Name | Projomia |
+| Subtitle | AI Work Context & Memory |
+| Primary category | Productivity |
+| Secondary category | Business |
+| Initial price | Free |
+| Version | 1.0.0 |
+| Privacy policy | https://projomia.com/privacy/ |
+| Support | https://projomia.com/support/ |
+| Marketing URL | https://projomia.com/ |
+| Public support and privacy email | raazeen@gmail.com |
+
+The three URLs were verified live over HTTPS. HTTP and www redirects reach the canonical HTTPS site. The support email was expressly selected by the Owner for publication.
+
+### Promotional text
+
+Capture the work. Connect the knowledge. Build lasting project context with photos, notes, documents, plans, and optional AI using your own OpenAI connection.
+
+### Keywords
+
+construction,photos,notes,drawings,documents,planner,journal,offline
+
+### Description
+
+Everything about your work.
+
+Give AI the context to understand your work and solve real problems.
+
+Projomia brings project photographs, notes, drawings, documents, plans, and daily records together on your iPhone.
+
+Capture and organize
+Take photographs into the project and room you choose. Import still images, drawings, and documents. Keep notes with the evidence and browse your work by project, folder, and date.
+
+Connect the work
+Use Planner, Journal, and Daily Log to record activities, areas, decisions, and daily progress. Keep the information that helps you understand what happened and return to it later.
+
+Build context for optional AI
+Connect your own OpenAI credential to ask questions using the project context and photographs you authorize. AI replies remain unverified until you review them. A suggestion image removes embedded location metadata; an identified exact-original send may include GPS already in the photograph.
+
+Keep a local project record
+Core capture, organization, notes, planning, and browsing work offline. There is no Projomia-operated cloud account or server. With the Mac companion, optional direct synchronization keeps a library on both devices.
+
+The app is free, with no Projomia subscription, advertising, or tracking. Optional OpenAI API usage is billed separately by OpenAI. ChatGPT sign-in availability depends on the account and supported access.
+
+Capture the work. Connect the knowledge. Build the context. Solve the problem.
+
+## App privacy answers prepared from the verified source
+
+| Data type | Linked to user | Tracking | Purpose |
 |---|---|---|---|
-| Name | Projomia | 30 | 8 |
-| Subtitle | AI Work Context & Memory | 30 | 24 |
-| Promotional text | Capture the work. Connect the knowledge. Give AI the context to understand your work and solve real problems. Photos, notes, and plans stay on your devices. | 170 | 156 |
-| Keywords | construction,photos,notes,drawings,documents,planner,journal,offline | 100 | 68 |
-| Price | Free | | |
-| Proposed version | 1.0.0 | | |
+| Email Address | Yes | No | App Functionality |
+| Photos or Videos | Yes | No | App Functionality |
+| Precise Location | Yes | No | App Functionality |
+| Other User Content | Yes | No | App Functionality |
+| User ID | Yes | No | App Functionality |
 
-The Xcode project is still 0.13.7 (80). Set 1.0.0 and a new build number when the distribution archive is made. Do not upload this draft.
+AI is optional, but primary AI functionality is not treated as an exemption from disclosure. Exact-original photographs can contain GPS. No claim is made that OpenAI retains no data.
 
-Headline, for the website and review notes, not a separate App Store field: Everything about your work.
+## Age rating and compliance
 
-Core promise: Give AI the context to understand your work and solve real problems.
+The questionnaire is not submitted and no age rating is assigned. The product is a work tool, not a Kids-category app. Private local project content is not a public social feed. AI conversation is not person-to-person messaging. Assess actual AI output capabilities in the current Apple questionnaire rather than answering every content-frequency item “None” automatically.
 
-Philosophy: Capture the work. Connect the knowledge. Build the context. Solve the problem.
+The current source declares ITSAppUsesNonExemptEncryption=false and retains the accepted privacy manifests, including boot-time reason 35F9.1. Carry that verified finding into the build-specific export questionnaire, checking the actual final archive before answering.
 
-## Description
-
-Projomia keeps the record of a project on your iPhone.
-
-Capture photographs into the room you choose. Import still images from Photos. Add notes, drawings, and documents. Use Planner, Journal, and Daily Log for the work as it happens. Browse by project, folder, and date.
-
-Your library stays on the device. There is no Projomia account and no Projomia cloud. If you also use the Mac app, pair the two devices and synchronize directly over your local network. When both sides change the same record, you choose which version to keep.
-
-AI is optional. Connect your own OpenAI API key or ChatGPT account, then confirm what to send. Projomia can include the question, notes, project context, and photographs you select. A suggestion copy is a resized image with location metadata removed. An exact-original send, which the screen identifies, can include location metadata already in the file. The app works fully if you never turn AI on.
-
-Projomia does not use advertising or tracking.
-
-## Screenshot captions
-
-Use captures of the current app after the Projomia name is on screen.
-
-1. Projects — Everything about your work.
-2. Camera — Capture the photograph into the room you choose.
-3. Photos and notes — Keep the visit with the picture.
-4. Drawings and documents — Read the files in the project.
-5. Planner — See the work, the areas, and what is waiting.
-6. Daily Log — Record the day against that plan.
-7. Projomia AI — Send only the context you confirm.
-8. Local sync — Pair a Mac and iPhone directly.
-
-## URLs
-
-Intended, not live until published and checked:
-
-- Privacy: https://projomia.com/privacy/
-- Support: https://projomia.com/support/
-
-Do not paste these into App Store Connect until HTTPS returns the prepared pages.
+Territories and any trader/legal declarations remain unset. Do not infer EU trader status, a legal address, phone number, or content-rights ownership. Do not configure payments, subscriptions, or a paid agreement.
 
 ## App Review notes
 
-Projomia is free. No sign-in is required. Create a project and use the camera, notes, drawings, documents, Planner, Journal, and Daily Log offline.
+Projomia is free and has no Projomia account. Create a project, add a room or folder, capture or import a photograph, add a note, and browse Planner, Journal, and Daily Log. Core local workflows do not require sign-in.
 
-AI is optional. It uses the reviewer’s own OpenAI API key or ChatGPT account. Nothing is sent until the reviewer confirms. Suggest-information copies strip location metadata. Exact-original sends can include GPS already stored in the file. Requests use store:false. Projomia has no server.
+Optional AI uses the user's own OpenAI API credential or eligible ChatGPT sign-in. The user authorizes the evidence sent to OpenAI. Suggest-information copies remove embedded location metadata; exact-original sends are identified and may include GPS. Requests use store:false, which does not guarantee zero OpenAI retention.
 
-Background processing indexes on the device and does not upload the library. Local network permission is only for optional direct sync with a paired Mac.
+Local-network permission supports optional direct pairing and sync with the Mac companion. Background indexing processes the local library. The internal library folder is named RoomLog.
 
-The library folder inside the app’s Files area is named RoomLog. That name is the storage folder, not the product name.
+Support: raazeen@gmail.com
+Privacy: https://projomia.com/privacy/
+Support URL: https://projomia.com/support/
+
+Private App Review contact name/telephone and any required reviewer AI access are not invented or included here. Complete those actual fields when app-management access is available.
+
+## Screenshots
+
+Use genuine captures of the Projomia release candidate with synthetic or approved project content. No approved, current-branded App Store screenshot set was established in this preparation. Website mockups are not app screenshots.
+
+Apple's current specification accepts 1206 × 2622 portrait captures for the iPhone 16 Pro / Dynamic Island medium group. It requires at least one iPhone screenshot, permits up to ten per device size, and disallows transparency. The current target is iPhone-only; do not invent iPad support or assets. Recheck the live upload wells at entry time.
+
+Suggested sequence:
+1. Projects — Everything about your work.
+2. Photos and notes — Keep evidence with its context.
+3. Drawings and documents — Bring project information together.
+4. Planner — Connect activities, areas, and dependencies.
+5. Daily Log — Record the day against the work.
+6. Projomia AI — Ask with context you authorize.
+
+Reference: https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications
+
+## Release boundary
+
+No app was uploaded, installed, submitted for review, or publicly released. Physical iPhone acceptance remains a separate release gate. Distribution signing and TestFlight are blocked until the intended Apple Developer Program membership is active.
