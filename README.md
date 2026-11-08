@@ -1,35 +1,23 @@
-# Projomia website
+# Projomia public website
 
-Local source for the public pages. This folder is a separate repository from the Projomia application.
+Published with GitHub Pages from `main`, repository root, at https://projomia.com/.
 
-Public site for projomia.com. DNS and HTTPS must be confirmed after each publication.
+- Homepage: https://projomia.com/
+- Privacy: https://projomia.com/privacy/
+- Support: https://projomia.com/support/
+- Public contact approved by the Owner: raazeen@gmail.com
+- Prepared App Store metadata: [app-store/listing.md](app-store/listing.md)
 
-Intended addresses after the owner publishes:
+## Verified 8 November 2026
 
-- https://projomia.com
-- https://projomia.com/privacy/
-- https://projomia.com/support/
+All three pages returned HTTP 200 in Chrome. Desktop and 390-pixel responsive layouts were inspected. Internal navigation works. HTTP and www requests redirect to canonical HTTPS. Chrome reports a valid Let's Encrypt certificate for projomia.com through 6 February 2027. GitHub Pages reports DNS check successful and Enforce HTTPS enabled.
 
-## What was found on the domain
+Google public DNS returned all four GitHub Pages A records, all four AAAA records, and the www CNAME to razeen38.github.io. Delegation points to armando.ns.cloudflare.com and malavika.ns.cloudflare.com. Cloudflare shows these website records in DNS-only mode. No DNS mutation was needed during this verification; the earlier Mac resolution failure cleared in Chrome.
 
-On 8 November 2026 the public nameservers answered as Cloudflare:
+No analytics, advertising, cookies, backend, or support form is included. Optional app AI sharing, credentials, GPS in original photographs, retention and deletion are explained in the privacy policy.
 
-- armando.ns.cloudflare.com
-- malavika.ns.cloudflare.com
+The website repository contains website and listing content only. The private application source remains in its separate authoritative local workspace. App Store preparation is not an app upload or a public release.
 
-A, AAAA, MX, TXT, and www lookups from this network timed out, so the current address, mail, and verification records were **not** read. Do not change DNS from this note alone.
+## Maintenance
 
-## Publish later, only with owner authorization
-
-1. Create a **public** GitHub repository for this folder when the owner asks. GitHub Pages on a custom domain requires a repository GitHub can serve. This task does not create that remote.
-2. Enable GitHub Pages from the repository root (main branch, `/`).
-3. The `CNAME` file already contains `projomia.com`.
-4. In the Cloudflare zone, **export the current records first**. Keep every MX, TXT (SPF, DKIM, DMARC), and any existing website or verification record that is still in use.
-5. For the apex domain, add only the GitHub Pages addresses if they are not already present. GitHub’s current Pages addresses are:
-   - A: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - AAAA: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
-6. Leave those records DNS-only (not proxied) until GitHub has issued the certificate. Proxying through Cloudflare before that can block certificate checks.
-7. If `www` is used, a CNAME to the GitHub Pages host is enough. Do not replace it if it already points somewhere the owner still needs.
-8. After HTTPS works, open `/`, `/privacy/`, and `/support/` and confirm the links. Only then add the privacy URL inside the app.
-
-No analytics, cookies, backend, or form is included. The support page has no email address because none was supplied.
+Keep the CNAME as projomia.com and preserve unrelated DNS records. Check live HTTPS pages after publication. Do not change DNS based only on a local resolver failure.
