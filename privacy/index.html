@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — Projomia</title>
+  <meta name="description" content="How Projomia stores work on your devices and what an optional AI send transmits to OpenAI.">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="../">Projomia</a>
+      <nav>
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Privacy</a>
+        <a href="../support/">Support</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <p class="kicker">Projomia · AI Work Context &amp; Memory</p>
+      <h1>Your work stays on your devices.</h1>
+      <p>This policy describes Projomia for iPhone and Mac as prepared for the first public release. It matches the app’s current behavior. It is not a promise about a future cloud service.</p>
+      <p>Last updated 8 November 2026.</p>
+
+      <h2>What stays on the device</h2>
+      <p>Photographs, notes, drawings, documents, Planner, Journal, and Daily Log are stored in the app on that iPhone or Mac. Projomia does not operate a cloud account or a Projomia server in this release. There is no Projomia login.</p>
+      <p>Optional sync sends records directly between a paired Mac and iPhone on the local network. That transfer does not go through Projomia. Original files are checked before records are saved. If both devices changed the same record, Projomia keeps the versions for you to choose.</p>
+
+      <h2>Optional AI</h2>
+      <p>AI is off until you connect your own OpenAI API key or sign in with ChatGPT, and until you send a request. Capture, notes, documents, Planner, Journal, and Daily Log work without a connection.</p>
+      <p>A send goes to OpenAI at api.openai.com using your credential. The screen asks before the send. Depending on what you confirm, the request can include:</p>
+      <ul>
+        <li>Your question, notes, project and room names, local text from photos, drawing extracts, and a bounded amount of saved project memory.</li>
+        <li>Photographs. “Suggest information” sends a resized JPEG with GPS and other embedded metadata removed. Note investigation can send the exact stored photograph, which is the default on that screen, and an authorized inspection can do the same. An exact original can still contain location metadata if the file has it. The screen states which kind of image is being sent.</li>
+      </ul>
+      <p>Those requests set <code>store: false</code>. Projomia does not keep a copy of the request on a server of its own. This does not mean OpenAI retains nothing. OpenAI’s own retention, including safety logging, still applies.</p>
+      <p>Replies are saved in your local library as unverified conversation. They do not change your project until you confirm a change.</p>
+
+      <h2>ChatGPT sign-in and keys</h2>
+      <p>If you sign in with ChatGPT, Projomia stores that account email in the iPhone or Mac Keychain and sends an identifier the app generates to OpenAI so the sign-in can be recognized. A later sign-in can send the email back to OpenAI as a hint. An API key, if you save one, is also kept in the Keychain and is sent only to OpenAI when you make a request.</p>
+      <p>Sign out removes the local ChatGPT session. If OpenAI does not confirm remote revocation, disconnect the app in ChatGPT settings as well. Removing the API key deletes it from the Keychain. Deleting the app removes its local library. Export or copy what you need first.</p>
+
+      <h2>What Projomia does not do</h2>
+      <p>Projomia does not show ads, does not track you across other companies’ apps, and does not use an advertising identifier. It does not use the microphone. It does not read your whole photo library. Saving to Photos happens only when you choose it. Import uses the photo picker. Live location is not collected. Precise location leaves the device only as metadata already inside a photograph you choose to send as an exact original.</p>
+
+      <h2>Privacy label</h2>
+      <p>The App Store label for this release should list Email Address, Photos or Videos, Precise Location, Other User Content, and User ID. Each is linked to the user through the OpenAI credential, is not used for tracking, and is used for app functionality.</p>
+
+      <h2>Contact</h2>
+      <p class="note">The publisher has not yet provided a public support address. Until that address is added on the <a href="../support/">support page</a>, this policy cannot name a mailbox or postal address.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="wrap">Projomia privacy policy. Intended address: https://projomia.com/privacy/ — not live until published.</div>
+  </footer>
+</body>
+</html>
