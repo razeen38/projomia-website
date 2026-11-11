@@ -44,6 +44,7 @@ body.home {background:#101713;color:#f5f1e8;font-family:-apple-system,BlinkMacSy
 .home footer {background:#101713;border-color:#344039;color:#aab5aa}
 @media(max-width:800px){.home .hero-grid{grid-template-columns:1fr}.home .hero{padding:65px 0 75px}.home .preview{transform:none;max-width:560px}.home .steps{grid-template-columns:1fr;gap:18px}.home .story{padding:60px 0}}
 @media(prefers-reduced-motion:reduce){.home .actions a:hover{transform:none}}
+.home .demo-switch{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 20px}.home .demo-switch button{font:600 .74rem -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;padding:9px 12px;border-radius:100px;background:transparent;color:#536257;border:1px solid #b9c2b8;cursor:pointer}.home .demo-switch button.selected{background:#243b2c;color:#fff;border-color:#243b2c}.home .demo-switch button:focus-visible{outline:3px solid #b67b4e;outline-offset:2px}
 </style>
 </head>
 <body class="home">
@@ -51,8 +52,23 @@ body.home {background:#101713;color:#f5f1e8;font-family:-apple-system,BlinkMacSy
 <main>
 <section class="hero"><div class="wrap hero-grid">
 <div><p class="eyebrow">Project clarity, every day</p><h1>Everything about <em>your work.</em></h1><p class="lead">Your projects generate hundreds of updates. Projomia connects the work behind them—so you can see what needs attention, understand what's holding progress back, and decide what happens next.</p><div class="actions"><a class="primary" href="#experience">See how it works</a><a href="support/">Contact us</a></div><p class="small">Built for real projects. Designed around the way you work.</p></div>
-<div class="preview" aria-label="Illustrative project briefing concept, not live project data"><div class="preview-top"><strong>Projomia</strong><span>PROJECT BRIEFING · EXAMPLE</span></div><div class="preview-body"><div class="preview-label">Wednesday · Your project at a glance</div><h2>What needs attention?</h2><div class="signal"><span>Needs a decision</span><strong>Lobby ceiling work is waiting</strong><p>Air-conditioning installation must finish before the ceiling can close.</p></div><div class="signal"><span>Follow up</span><strong>Confirm contractor mobilization</strong><p>Fire protection works are still on the coordination list.</p></div><div class="signal"><span>Next step</span><strong>Review this week's priorities</strong><p>Bring plans, site notes, photos and decisions into one working context.</p></div><p class="preview-foot">Illustrative experience · Not a live project report</p></div></div>
+<div class="preview" aria-label="Interactive fictional project briefing"><div class="preview-top"><strong>Projomia</strong><span>TRY THE EXPERIENCE</span></div><div class="preview-body"><div class="preview-label">SAMPLE PROJECT · INTERACTIVE</div><h2>What needs attention?</h2><div class="demo-switch" role="group" aria-label="Choose a scenario"><button class="selected" type="button" data-scenario="site" aria-pressed="true">Site progress</button><button type="button" data-scenario="handover" aria-pressed="false">Handover</button><button type="button" data-scenario="materials" aria-pressed="false">Materials</button></div><div id="demo-cards"><div class="signal"><span>Needs a decision</span><strong>Lobby ceiling work is waiting</strong><p>Air-conditioning installation must finish before the ceiling can close.</p></div><div class="signal"><span>Follow up</span><strong>Confirm contractor mobilization</strong><p>Fire protection works are still on the coordination list.</p></div><div class="signal"><span>Next step</span><strong>Review this week's priorities</strong><p>Bring plans, site notes, photos and decisions into one working context.</p></div></div><p class="preview-foot" id="demo-status" role="status" aria-live="polite">Site progress example · Fictional data, not a live report</p></div></div>
 </div></section>
 <section class="story" id="experience"><div class="wrap"><p class="eyebrow">Less searching. More progress.</p><h2>From scattered information to a clearer next move.</h2><div class="steps"><article><b>01 / CAPTURE</b><h3>Keep the work together.</h3><p>Photos, notes, drawings, documents, journals and plans belong in the same project context.</p></article><article><b>02 / CONNECT</b><h3>See the relationships.</h3><p>Understand how activities, decisions, evidence and blockers affect one another.</p></article><article><b>03 / ACT</b><h3>Know what comes next.</h3><p>Turn project history into practical questions, priorities and follow-ups.</p></article></div><div class="actions"><a class="primary" href="support/">Explore Projomia</a><a href="privacy/">How your data is handled</a></div></div></section>
 </main><footer><div class="wrap">Projomia · Your work, connected. <a href="support/">Support</a> · <a href="privacy/">Privacy</a></div></footer>
-</body></html>
+<script>
+(function(){
+const scenarios={
+site:[["Needs a decision","Lobby ceiling work is waiting","Air-conditioning installation must finish before the ceiling can close."],["Follow up","Confirm contractor mobilization","Fire protection works are still on the coordination list."],["Next step","Review this week's priorities","Bring plans, site notes, photos and decisions into one working context."]],
+handover:[["Open issue","Final inspection comments remain","Close recorded defects before requesting the handover inspection."],["Dependency","Testing precedes acceptance","Collect commissioning records before the final sign-off."],["Next step","Prepare the handover pack","Gather drawings, certificates, photographs and outstanding actions."]],
+materials:[["At risk","Cladding work awaits profiles","Confirm missing framing materials before committing to the next installation date."],["Follow up","Check delivery commitment","Ask the supplier for a confirmed date and link the response to the affected activity."],["Next step","Reorder the work sequence","Prioritize available work while the dependent installation remains blocked."]]
+};
+const labels={site:"Site progress",handover:"Handover",materials:"Materials"};
+document.querySelectorAll("[data-scenario]").forEach(button=>button.addEventListener("click",()=>{
+const key=button.dataset.scenario;
+document.querySelectorAll("[data-scenario]").forEach(b=>{const active=b===button;b.classList.toggle("selected",active);b.setAttribute("aria-pressed",String(active));});
+document.querySelectorAll("#demo-cards .signal").forEach((card,i)=>{const entry=scenarios[key][i];card.querySelector("span").textContent=entry[0];card.querySelector("strong").textContent=entry[1];card.querySelector("p").textContent=entry[2];});
+document.getElementById("demo-status").textContent=labels[key]+" example · Fictional data, not a live report";
+}));
+})();
+</script></body></html>
