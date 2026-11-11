@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projomia</title>
-  <meta name="description" content="Everything about your work. Give AI the context to understand your work and solve real problems.">
-  <link rel="stylesheet" href="css/site.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projomia — Everything about your work</title>
+<meta name="description" content="Turn scattered project updates into a clear view of what matters, what's blocked, and what happens next.">
+<link rel="stylesheet" href="css/site.css">
+<style>
+body.home {background:#101713;color:#f5f1e8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.home .wrap {width:min(1160px,calc(100% - 44px))}
+.home header.site {background:#101713;border-color:#344039}
+.home .brand {font-family:Georgia,serif;font-size:1.5rem;color:#f5f1e8}
+.home nav a {color:#d2d6cf}.home nav a[aria-current] {color:#e7cda0}
+.home main {padding:0}
+.home .hero {padding:clamp(70px,10vw,145px) 0 110px;background:radial-gradient(ellipse at 85% 45%,#2b3c32 0%,transparent 55%)}
+.home .hero-grid {display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(35px,6vw,90px)}
+.home .eyebrow {font-size:.73rem;letter-spacing:.23em;text-transform:uppercase;color:#dfc89e;font-weight:650}
+.home h1 {font-family:Georgia,serif;font-weight:400;font-size:clamp(3.5rem,6vw,6.5rem);letter-spacing:-.055em;line-height:1.03;margin:22px 0}
+.home h1 em {font-weight:400;color:#dfc89e}
+.home .lead {font-size:clamp(1.05rem,1.6vw,1.25rem);color:#c4cbc4;line-height:1.75;max-width:510px}
+.home .actions a {border-color:#d8c49e;color:#f6ead6;padding:14px 23px;border-radius:5px;font-weight:600}
+.home .actions a.primary {background:#e1c99d;color:#162019;border-color:#e1c99d}
+.home .actions a:hover {transform:translateY(-2px)}
+.home .small {font-size:.8rem;color:#a6b2a9;margin-top:24px}
+.home .preview {background:#eae7df;color:#243129;border-radius:18px;box-shadow:0 32px 75px #0008;overflow:hidden;transform:rotate(1deg)}
+.home .preview-top {background:#f7f5ef;padding:20px 24px;border-bottom:1px solid #d9d8d0;display:flex;justify-content:space-between;align-items:center;font-size:.8rem}
+.home .preview-top strong {font-family:Georgia,serif;font-size:1.15rem}
+.home .preview-body {padding:27px}
+.home .preview-label {text-transform:uppercase;letter-spacing:.15em;font-size:.65rem;color:#7a806f}
+.home .preview h2 {font-family:Georgia,serif;font-size:2rem;font-weight:400;margin:7px 0 22px}
+.home .signal {background:#fffefa;border:1px solid #d9d8d0;border-radius:12px;padding:17px 18px;margin:11px 0}
+.home .signal strong {display:block;font-size:.96rem;margin-bottom:7px}
+.home .signal p {font-size:.85rem;color:#566159;margin:0;line-height:1.55}
+.home .signal span {display:inline-block;color:#8b6135;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-weight:700}
+.home .signal:first-of-type {border-left:4px solid #b67b4e}
+.home .preview-foot {font-size:.76rem;color:#66716a;margin-top:20px}
+.home .story {background:#f2eee5;color:#18241c;padding:85px 0}
+.home .story h2 {font:400 clamp(2rem,4vw,3.6rem)/1.14 Georgia,serif;max-width:720px;margin:0 0 42px}
+.home .steps {display:grid;grid-template-columns:repeat(3,1fr);gap:35px}
+.home .steps article {border-top:1px solid #b8b6aa;padding-top:23px}
+.home .steps b {font-size:.7rem;letter-spacing:.15em;color:#806039}
+.home .steps h3 {font:400 1.5rem Georgia,serif;margin:16px 0 10px}
+.home .steps p {color:#566159;line-height:1.7}
+.home footer {background:#101713;border-color:#344039;color:#aab5aa}
+@media(max-width:800px){.home .hero-grid{grid-template-columns:1fr}.home .hero{padding:65px 0 75px}.home .preview{transform:none;max-width:560px}.home .steps{grid-template-columns:1fr;gap:18px}.home .story{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){.home .actions a:hover{transform:none}}
+</style>
 </head>
-<body>
-  <header class="site">
-    <div class="wrap">
-      <a class="brand" href="./">Projomia</a>
-      <nav>
-        <a href="./" aria-current="page">Home</a>
-        <a href="privacy/">Privacy</a>
-        <a href="support/">Support</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="wrap">
-      <p class="kicker">AI Work Context &amp; Memory</p>
-      <h1>Everything about your work.</h1>
-      <p class="promise">Give AI the context to understand your work and solve real problems.</p>
-      <p class="philosophy">Capture the work. Connect the knowledge. Build the context. Solve the problem.</p>
-      <p>Projomia is a local project record for iPhone and Mac. Keep photographs, notes, drawings, documents, a planner, a journal, and a daily log on your devices. When you choose, send selected context to OpenAI with your own account.</p>
-      <div class="actions">
-        <a class="primary" href="support/">Get started</a>
-        <a href="privacy/">Privacy policy</a>
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="wrap">Projomia. Photographs, notes, and plans stay on your devices.</div>
-  </footer>
-</body>
-</html>
+<body class="home">
+<header class="site"><div class="wrap"><a class="brand" href="./">Projomia</a><nav aria-label="Main navigation"><a href="./" aria-current="page">Home</a><a href="privacy/">Privacy</a><a href="support/">Support</a></nav></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid">
+<div><p class="eyebrow">Project clarity, every day</p><h1>Everything about <em>your work.</em></h1><p class="lead">Your projects generate hundreds of updates. Projomia connects the work behind them—so you can see what needs attention, understand what's holding progress back, and decide what happens next.</p><div class="actions"><a class="primary" href="#experience">See how it works</a><a href="support/">Contact us</a></div><p class="small">Built for real projects. Designed around the way you work.</p></div>
+<div class="preview" aria-label="Illustrative project briefing concept, not live project data"><div class="preview-top"><strong>Projomia</strong><span>PROJECT BRIEFING · EXAMPLE</span></div><div class="preview-body"><div class="preview-label">Wednesday · Your project at a glance</div><h2>What needs attention?</h2><div class="signal"><span>Needs a decision</span><strong>Lobby ceiling work is waiting</strong><p>Air-conditioning installation must finish before the ceiling can close.</p></div><div class="signal"><span>Follow up</span><strong>Confirm contractor mobilization</strong><p>Fire protection works are still on the coordination list.</p></div><div class="signal"><span>Next step</span><strong>Review this week's priorities</strong><p>Bring plans, site notes, photos and decisions into one working context.</p></div><p class="preview-foot">Illustrative experience · Not a live project report</p></div></div>
+</div></section>
+<section class="story" id="experience"><div class="wrap"><p class="eyebrow">Less searching. More progress.</p><h2>From scattered information to a clearer next move.</h2><div class="steps"><article><b>01 / CAPTURE</b><h3>Keep the work together.</h3><p>Photos, notes, drawings, documents, journals and plans belong in the same project context.</p></article><article><b>02 / CONNECT</b><h3>See the relationships.</h3><p>Understand how activities, decisions, evidence and blockers affect one another.</p></article><article><b>03 / ACT</b><h3>Know what comes next.</h3><p>Turn project history into practical questions, priorities and follow-ups.</p></article></div><div class="actions"><a class="primary" href="support/">Explore Projomia</a><a href="privacy/">How your data is handled</a></div></div></section>
+</main><footer><div class="wrap">Projomia · Your work, connected. <a href="support/">Support</a> · <a href="privacy/">Privacy</a></div></footer>
+</body></html>
