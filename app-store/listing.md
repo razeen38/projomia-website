@@ -75,7 +75,7 @@ Territories and any trader/legal declarations remain unset. Do not infer EU trad
 
 Projomia is free and has no Projomia account. Create a project, add a room or folder, capture or import a photograph, add a note, and browse Planner, Journal, and Daily Log. Core local workflows do not require sign-in.
 
-Optional AI uses the user's own OpenAI API credential or eligible ChatGPT sign-in. The user authorizes the evidence sent to OpenAI. Suggest-information copies remove embedded location metadata; exact-original sends are identified and may include GPS. Requests use store:false, which does not guarantee zero OpenAI retention.
+Optional AI uses the user's own OpenAI API credential or eligible ChatGPT sign-in. Starting an AI request authorizes the evidence sent for that request; project chat may retrieve needed originals during the same request. Suggest-information copies remove embedded location metadata; exact-original sends may include GPS already in the file. Requests use store:false, which does not guarantee zero OpenAI retention.
 
 Local-network permission supports optional direct pairing and sync with the Mac companion. Background indexing processes the local library. The internal library folder is named RoomLog.
 

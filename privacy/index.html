@@ -23,18 +23,18 @@
       <p class="kicker">Projomia · AI Work Context &amp; Memory</p>
       <h1>Your privacy in Projomia.</h1>
       <p>This policy describes Projomia for iPhone and Mac as prepared for the first public release. It matches the app’s current behavior. It is not a promise about a future cloud service.</p>
-      <p>Last updated 8 November 2026.</p>
+      <p>Last updated 12 November 2026.</p>
 
       <h2>What stays on the device</h2>
       <p>Photographs, notes, drawings, documents, Planner, Journal, and Daily Log are stored in the app on that iPhone or Mac. Projomia does not operate a cloud account or a Projomia server in this release. There is no Projomia login.</p>
-      <p>Optional sync sends records directly between a paired Mac and iPhone on the local network. That transfer does not go through Projomia. Original files are checked before records are saved. If both devices changed the same record, Projomia keeps the versions for you to choose.</p>
+      <p>Optional sync sends records directly between a paired Mac and iPhone on the local network. That transfer does not go through Projomia. Original files are checked before records are saved. If both devices changed the same record while offline, Projomia resolves it automatically using a fixed rule so both devices keep the same result. A superseded copy can remain in a private sync archive on the device; ordinary sync does not ask you to pick a version.</p>
 
       <h2>Optional AI</h2>
-      <p>AI is off until you connect your own OpenAI API key or sign in with ChatGPT, and until you send a request. Capture, notes, documents, Planner, Journal, and Daily Log work without a connection.</p>
-      <p>A send goes to OpenAI at api.openai.com using your credential. The screen asks before the send. Depending on what you confirm, the request can include:</p>
+      <p>AI is off until you connect your own OpenAI API key or sign in with ChatGPT, and until you start an AI request or enable an optional automatic AI folder rule. Capture, notes, documents, Planner, Journal, and Daily Log work without a connection.</p>
+      <p>A send goes to OpenAI at api.openai.com using your credential. Starting the request is the authorization. In Projomia AI / project chat, pressing Send authorizes that question, including automatic retrieval of project context and needed photograph or drawing extracts during the same request. Some other AI actions still show a confirmation dialog before the first send. An optional folder import rule can also send matching imported sources after you enable its AI permission on that device. A request can include:</p>
       <ul>
         <li>Your question, notes, project and room names, local text from photos, drawing extracts, and a bounded amount of saved project memory.</li>
-        <li>Photographs. “Suggest information” sends a resized JPEG with GPS and other embedded metadata removed. Note investigation can send the exact stored photograph, which is the default on that screen, and an authorized inspection can do the same. An exact original can still contain location metadata if the file has it. The screen states which kind of image is being sent.</li>
+        <li>Photographs. “Suggest information” sends a resized JPEG with GPS and other embedded metadata removed. Note investigation can send either a resized preview or the exact stored photograph, depending on the toggle on that screen. Projomia AI can retrieve needed originals or labelled extracts for the authorized question. An exact original can still contain location metadata if the file has it.</li>
       </ul>
       <p>Those requests set <code>store: false</code>. Projomia does not keep a copy of the request on a server of its own. This does not mean OpenAI retains nothing. OpenAI’s own retention, including safety logging, still applies. Read <a href="https://openai.com/policies/privacy-policy/">OpenAI’s privacy policy</a> and <a href="https://platform.openai.com/docs/guides/your-data">API data controls</a> for its handling of requests.</p>
       <p>Replies are saved in your local library as unverified conversation. They do not change your project until you confirm a change.</p>
@@ -45,7 +45,7 @@
 
       <h2>Retention, deletion, and consent</h2>
       <p>Project records and saved conversations remain in your local library until you delete them. Use the app’s deletion and Cleanup controls to manage local records. Review copies on paired devices, exported files, and device backups separately. Signing out or removing a credential does not delete your project library.</p>
-      <p>You can stop future AI sharing by declining sends, stopping optional AI workflows, and disconnecting your OpenAI credential in Settings. Data already sent to OpenAI is subject to OpenAI’s retention and deletion procedures; Projomia cannot erase it from OpenAI by deleting a local record. For OpenAI data requests, use <a href="https://privacy.openai.com/">OpenAI’s privacy portal</a>. Projomia has no server-held project library for the publisher to retrieve or delete.</p>
+      <p>You can stop future AI sharing by not starting AI requests, turning off optional automatic AI folder rules, and disconnecting your OpenAI credential in Settings. Where a confirmation dialog still appears, canceling that dialog also stops that send. Data already sent to OpenAI is subject to OpenAI’s retention and deletion procedures; Projomia cannot erase it from OpenAI by deleting a local record. For OpenAI data requests, use <a href="https://privacy.openai.com/">OpenAI’s privacy portal</a>. Projomia has no server-held project library for the publisher to retrieve or delete.</p>
 
       <h2>What Projomia does not do</h2>
       <p>Projomia does not show ads, does not track you across other companies’ apps, and does not use an advertising identifier. It does not use the microphone. It does not read your whole photo library. Saving to Photos happens only when you choose it. Import uses the photo picker. Live location is not collected. Precise location leaves the device only as metadata already inside a photograph you choose to send as an exact original.</p>
