@@ -15,7 +15,7 @@ Prepared on 8 November 2026. Not entered in App Store Connect: the signed-in App
 | Privacy policy | https://projomia.com/privacy/ |
 | Support | https://projomia.com/support/ |
 | Marketing URL | https://projomia.com/ |
-| Public support and privacy email | raazeen@gmail.com |
+| Public support and privacy email | support@projomia.com |
 
 The three URLs were verified live over HTTPS. HTTP and www redirects reach the canonical HTTPS site. The support email was expressly selected by the Owner for publication.
 
@@ -79,7 +79,7 @@ Optional AI uses the user's own OpenAI API credential or eligible ChatGPT sign-i
 
 Local-network permission supports optional direct pairing and sync with the Mac companion. Background indexing processes the local library. The internal library folder is named RoomLog.
 
-Support: raazeen@gmail.com
+Support: support@projomia.com
 Privacy: https://projomia.com/privacy/
 Support URL: https://projomia.com/support/
 

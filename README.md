@@ -11,7 +11,7 @@ Current published design (12 November 2026): interactive **Project Pulse** homep
 - Support: https://projomia.com/support/
 - Project Pulse (full): https://projomia.com/pulse.html
 - Related interactive pages also live: `try.html`, `briefing.html`, `clarity.html`, `morning.html`, `decision-lab.html`, `your-briefing.html`
-- Public contact approved by the Owner: raazeen@gmail.com
+- Public customer contact approved by the Owner: support@projomia.com. This address is for customers. App Review uses a separate contact.
 - Prepared App Store metadata: [app-store/listing.md](app-store/listing.md)
 
 ## Verified 8 November 2026 (core site)
