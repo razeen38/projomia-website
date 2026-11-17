@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /app-store/
+Disallow: /README.md
+
+Sitemap: https://projomia.com/sitemap.xml
