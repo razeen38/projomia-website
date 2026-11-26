@@ -2,7 +2,7 @@
 
 Published with GitHub Pages from `main`, repository root, at https://projomia.com/.
 
-Current published design (12 November 2026): interactive **Project Pulse** homepage — attention board by role, blind-spot diagnosis, cost-of-blocker calculator, sample briefing, privacy-by-design, and email access request. No App Store download yet.
+Current published design (12 November 2026): interactive **Project Pulse** homepage — attention board by role, blind-spot diagnosis, cost-of-blocker calculator, sample briefing, privacy-by-design, and email access request. The iPhone app is on the App Store (https://apps.apple.com/app/projomia/id6833906753). Android is in early access by email request.
 
 ## Live pages
 
