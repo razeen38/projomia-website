@@ -45,7 +45,7 @@ Build context for optional AI
 Connect your own OpenAI credential to ask questions using the project context and photographs you authorize. AI replies remain unverified until you review them. A suggestion image removes embedded location metadata; an identified exact-original send may include GPS already in the photograph.
 
 Keep a local project record
-Core capture, organization, notes, planning, and browsing work offline. There is no Projomia-operated cloud account or server. With the Mac companion, optional direct synchronization keeps a library on both devices.
+Core capture, organization, notes, planning, and browsing work offline. There is no Projomia-operated cloud account or server.
 
 The app is free, with no Projomia subscription, advertising, or tracking. Optional OpenAI API usage is billed separately by OpenAI. ChatGPT sign-in availability depends on the account and supported access.
 

@@ -1,0 +1,23 @@
+# Projomia
+> Free iPhone app that keeps project photos, plans, notes and daily logs in a local library, with optional AI using your own OpenAI connection. For site managers, engineers and contractors worldwide.
+
+## Key pages
+- [Home](https://projomia.com/): what Projomia does and how to get it
+- [Support](https://projomia.com/support/): iPhone, Android early access and offline use
+- [Privacy](https://projomia.com/privacy/): local records and optional AI
+- [Try it](https://projomia.com/try.html): 30-second interactive example with fictional data
+- [Project Pulse](https://projomia.com/pulse.html): one-minute coordination check with fictional data
+- [App Store](https://apps.apple.com/app/projomia/id6833906753): download for iPhone
+
+## Availability
+- iPhone: free on the App Store (iOS 18 or later). No subscription, ads or tracking.
+- Android: early access by request — email support@projomia.com with your Google Play email. No AI on Android.
+- Mac: not yet available.
+
+## Facts
+- Records stay in a local library on the device. No Projomia account or server in this release.
+- Capture, notes, documents, Planner, Journal and Daily Log work offline.
+- AI is optional: connect your own OpenAI API key or ChatGPT sign-in. AI replies stay "unverified" until you confirm them.
+
+## Contact
+- support@projomia.com
