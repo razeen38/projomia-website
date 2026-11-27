@@ -6,7 +6,8 @@
 - [Support](https://projomia.com/support/): iPhone, Android early access and offline use
 - [Privacy](https://projomia.com/privacy/): local records and optional AI
 - [Try it](https://projomia.com/try.html): 30-second interactive example with fictional data
-- [Project Pulse](https://projomia.com/pulse.html): one-minute coordination check with fictional data
+- [Morning site briefing example](https://projomia.com/briefing.html): what a morning briefing should answer, with an interactive fictional example
+- [Construction delay example](https://projomia.com/decision-lab.html): three ways to respond to a late delivery, with fictional data
 - [Offline construction app](https://projomia.com/offline-construction-app/): what works without signal, where records live
 - [Construction daily report template](https://projomia.com/construction-daily-report-template/): what to include, free printable template
 - [App Store](https://apps.apple.com/app/projomia/id6833906753): download for iPhone
